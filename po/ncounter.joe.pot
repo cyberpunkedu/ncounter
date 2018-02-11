@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ncounter.joe\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-11 05:18+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/Home.qml:37 ../qml/AboutApp.qml:31 ../qml/Main.qml:34
+#: ncounter.desktop.in.h:1
+msgid "nCounter"
+msgstr ""
+
+#: ../qml/Home.qml:75
+msgid "Event to track:"
+msgstr ""
+
+#: ../qml/Home.qml:90
+msgid "Add nCounter"
+msgstr ""
+
+#: ../qml/Home.qml:97
+msgid "Track"
+msgstr ""
+
+#: ../qml/Home.qml:118
+msgid " since "
+msgstr ""
+
+#: ../qml/AboutApp.qml:47
+msgid "About nCounter"
+msgstr ""
+
+#: ../qml/AboutApp.qml:61
+msgid "Version: "
+msgstr ""
+
+#: ../qml/AboutApp.qml:65
+msgid ""
+"How long has it been since your last nCounter? Trying to start something or "
+"trying to quit something? Enter the event date and name, then press 'Track' "
+"to find out how long it has been. Details appear in the user metrics on the "
+"lock screen."
+msgstr ""
+
+#. TRANSLATORS: Description of the menu item
+#: ../qml/modules/DefaultHeader.qml:37
+msgid "About This App"
+msgstr ""
+
+#: ../qml/modules/DefaultHeader.qml:42
+msgid "Report Bugs"
+msgstr ""
+
+#: ../qml/Main.qml:59
+msgid "last nCounter"
+msgstr ""

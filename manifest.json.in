@@ -1,0 +1,15 @@
+{
+    "name": "ncounter.joe",
+    "description": "Count how many days since an event.",
+    "architecture": "@CLICK_ARCH@",
+    "title": "nCounter",
+    "hooks": {
+        "ncounter": {
+            "apparmor": "ncounter.apparmor",
+            "desktop":  "ncounter.desktop"
+        }
+    },
+    "version": "0.1a",
+    "maintainer": "Joe <joe@ubports.com>",
+    "framework" : "ubuntu-sdk-15.04.6"
+}
