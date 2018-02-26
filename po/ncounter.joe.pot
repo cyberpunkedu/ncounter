@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ncounter.joe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-11 05:18+0000\n"
+"POT-Creation-Date: 2018-02-26 04:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,25 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/Home.qml:37 ../qml/AboutApp.qml:31 ../qml/Main.qml:34
-#: ncounter.desktop.in.h:1
+#: ../qml/update-metric.qml:38 ../qml/Home.qml:62 ../qml/Settings.qml:87
+msgid "Check nCounter"
+msgstr ""
+
+#: ../qml/Home.qml:34 ../qml/AboutApp.qml:31 ../qml/Main.qml:34
+#: ../qml/Settings.qml:35 ncounter.desktop.in.h:1
 msgid "nCounter"
-msgstr ""
-
-#: ../qml/Home.qml:75
-msgid "Event to track:"
-msgstr ""
-
-#: ../qml/Home.qml:90
-msgid "Add nCounter"
-msgstr ""
-
-#: ../qml/Home.qml:97
-msgid "Track"
-msgstr ""
-
-#: ../qml/Home.qml:118
-msgid " since "
 msgstr ""
 
 #: ../qml/AboutApp.qml:47
@@ -48,21 +36,37 @@ msgstr ""
 
 #: ../qml/AboutApp.qml:65
 msgid ""
-"How long has it been since your last nCounter? Trying to start something or "
+"How long has it been since the last nCounter? Trying to start something or "
 "trying to quit something? Enter the event date and name, then press 'Track' "
 "to find out how long it has been. Details appear in the user metrics on the "
 "lock screen."
 msgstr ""
 
-#. TRANSLATORS: Description of the menu item
-#: ../qml/modules/DefaultHeader.qml:37
-msgid "About This App"
-msgstr ""
-
-#: ../qml/modules/DefaultHeader.qml:42
+#: ../qml/AboutApp.qml:70
 msgid "Report Bugs"
 msgstr ""
 
-#: ../qml/Main.qml:59
-msgid "last nCounter"
+#: ../qml/modules/DefaultHeader.qml:36
+msgid "About App"
+msgstr ""
+
+#. TRANSLATORS: Description of the menu item
+#: ../qml/modules/DefaultHeader.qml:43
+msgid "Settings"
+msgstr ""
+
+#: ../qml/Settings.qml:58
+msgid "Event Name & Date:"
+msgstr ""
+
+#: ../qml/Settings.qml:63
+msgid "Input event name"
+msgstr ""
+
+#: ../qml/Settings.qml:99
+msgid "Track"
+msgstr ""
+
+#: ../qml/Settings.qml:99
+msgid "Update"
 msgstr ""

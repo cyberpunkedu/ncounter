@@ -59,7 +59,7 @@ function daySince(a, b, c) {
     if (a2==1) { finalDate = finalDate + ", and " }
     if (d==1){ finalDate = finalDate + dday + " Day(s)" }
   
-    if ((y==0) && (mm==0) && (d==0)) { finalDate = "Too soon" }
+    if ((y==0) && (mm==0) && (d==0)) { finalDate = "A moment" }
 
     return finalDate
 }

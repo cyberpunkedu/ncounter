@@ -1,6 +1,6 @@
-// DefaultHeader.qml
+// CalcDays.qml
 //
-// This file is part of the nCounter application.
+// This file is part of the Say Ubuntu application.
 //
 // Copyright (c) 2017 
 //
@@ -24,26 +24,12 @@
 
 import QtQuick 2.4
 import Ubuntu.Components 1.3
+import "../../assets/daySince.js" as Dater
 
-PageHeader {
-    id: mainHeader
-    title: parent.title
-    trailingActionBar {
-        actions: [
-        Action {
-            iconName: "info"
-	    visible: mainStack.depth === 1
-            text: i18n.tr("About App")
-            onTriggered: mainStack.push(Qt.resolvedUrl("../AboutApp.qml"))
-        },
-        Action {
-            iconName: "settings"
-            visible: mainStack.depth === 1
-            //TRANSLATORS: Description of the menu item
-            text: i18n.tr("Settings")
-            onTriggered: mainStack.push(Qt.resolvedUrl("../Settings.qml"))
-        }
-        ]
-        numberOfSlots: mainStack.depth === 1 ? 2 : 1
-    }
+Item {
+    property int theYear: settings.myDate.getFullYear()
+    property int theMonth: settings.myDate.getMonth()
+    property int theDay: settings.myDate.getDate()
+    property string theEvent: settings.myEvent
+    property string report: theEvent + ":\n" + Dater.daySince(theYear, theMonth, theDay) + " ago "
 }

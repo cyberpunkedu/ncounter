@@ -26,11 +26,8 @@ import QtQuick 2.4
 import Ubuntu.Components 1.3
 import "modules"
 import QtMultimedia 5.0
-import Ubuntu.Components.Pickers 0.1
-import "../assets/daySince.js" as Dater
+import "../assets/newLines.js" as Liner
 import UserMetrics 0.1
-
-
 
 Page {
     id: homePage
@@ -57,67 +54,85 @@ Page {
                 width: 20
             }
 
-
-            DatePicker {
-                anchors.horizontalCenter: parent.horizontalCenter
-                id: eventDate
-                minimum: {
-                    var d = new Date();
-                    d.setFullYear(d.getFullYear() - 100);
-                    return d;
-                }
-                mode: "Years|Months|Days"
-                date: new Date()
-            }
-
-	    DefaultLabel {
-                 id: inputLabel
-                 text: i18n.tr("Event to track:")
-            }
-   
-            TextField {
-                 id: event
-                 text: settings.myEvent
-                 anchors.horizontalCenter: parent.horizontalCenter
-                 focus: true
-             }
-          
             Metric {
                 property string circleMetric
                 id: metric
                 name: "nCounter"
                 format: circleMetric
-                emptyFormat: i18n.tr("Add nCounter")
+                emptyFormat: i18n.tr("Check nCounter")
                 domain: "ncounter.joe"
             }
 
-            Button {
-                anchors.horizontalCenter: parent.horizontalCenter
-                id: saveDate
-                text: i18n.tr("Track")
-                property int theYear: settings.myDate.getFullYear()
-                property int theMonth: settings.myDate.getMonth()
-                property int theDay: settings.myDate.getDate()
-                property string theEvent: settings.myEvent
-                property string theFinal: Dater.daySince(theYear, theMonth, theDay)
-                onClicked: {
-                    settings.myEvent = event.text
-                    settings.myDate = eventDate.date
-                    metric.circleMetric = theFinal + " since " + theEvent
-                    metric.update(0)
+            CalcDays{
+                id: updateReport
+                Component.onCompleted: {
+                        settings.myReport = updateReport.report
+                        metric.circleMetric = updateReport.report
+                        metric.update(0)
+                        console.log("nCounter metric updated on load\n")
+                }
+
+                Timer {
+                    interval: 60000; running: true; repeat: true
+                    onTriggered: {
+                        settings.myReport = updateReport.report
+                        metric.circleMetric = updateReport.report
+                        metric.update(0)
+                        console.log("nCounter metric updated by timer\n")
+                    }
                 }
             }
 
             DefaultLabel {
-                property int theYear: settings.myDate.getFullYear()
-                property int theMonth: settings.myDate.getMonth()
-                property int theDay: settings.myDate.getDate()
-                property string theEvent: settings.myEvent
-                property string theFinal: Dater.daySince(theYear, theMonth, theDay)
-                id: record
-                text: theFinal + i18n.tr(" since ") + theEvent
-                }
+                id: testMetric
+                font.pixelSize: 70
+                text: (settings.myEvent == 0) ? "Add event in settings" : settings.myReport 
+            }
 
+
+            
+            Image {
+	        id: daysImage
+                anchors.horizontalCenter: parent.horizontalCenter
+                horizontalAlignment: Image.AlignHCenter
+                source: (settings.myEvent == 0) ? Qt.resolvedUrl("../assets/daysg.svg") : Qt.resolvedUrl("../assets/days.svg")
+                width: units.gu(20)
+                height: units.gu(20)
+            }
+
+            DefaultLabel {
+                property int longness: quoteList.theList.length - 1
+                property int quoteNum: Math.floor(Math.random() * longness)
+		property string theQuote: quoteList.theList[quoteNum]
+                id: quote
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: theQuote
+                Timer {
+                    interval: 5000; running: true; repeat: true
+                    onTriggered: {
+                        quote.quoteNum = Math.floor(Math.random() * quote.longness)
+                        // quote.theQuote = quoteList.theList[quote.quoteNum]
+                    }
+                }
+            }
+
+            Item {
+                id: quoteList
+                property var theList: [
+                    "And not only so, but we also boast in our tribulations, knowing that tribulation produces endurance",
+                    "Knowing that the proving of your faith works out endurance",
+                    "Rejoice in hope; endure in tribulation; persevere in prayer",
+                    "The discretion of a man makes him slow to anger", 
+                    "Better is the end of a thing than its beginning",
+                    "Better is patience of spirit than haughtiness of spirit",
+                    "Love suffers long. Love is kind; it is not jealous",
+                    "With all lowliness and meekness, with long-suffering, bearing one another in love",
+                    "And endurance, approvedness; and approvedness, hope",
+                    "And let endurance have its perfect work that you may be perfect and entire, lacking in nothing",
+                    "And in knowledge, self-control; and in self-control, endurance; and in endurance, godliness",
+                    "Do. Or do not. There is no try."
+               ]
+            }
         }
     }
 }

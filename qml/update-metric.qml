@@ -1,8 +1,8 @@
-// DefaultHeader.qml
+// update-metric.qml
 //
-// This file is part of the nCounter application.
+// This file is part of the nCounter application. But it is not yet implemented.
 //
-// Copyright (c) 2017 
+// Copyright (c) 2017
 //
 // Maintained by Joe (@exar_kun) <joe@ubports.com>
 //
@@ -22,28 +22,30 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import QtQml 2.2
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import UserMetrics 0.1
 
-PageHeader {
-    id: mainHeader
-    title: parent.title
-    trailingActionBar {
-        actions: [
-        Action {
-            iconName: "info"
-	    visible: mainStack.depth === 1
-            text: i18n.tr("About App")
-            onTriggered: mainStack.push(Qt.resolvedUrl("../AboutApp.qml"))
-        },
-        Action {
-            iconName: "settings"
-            visible: mainStack.depth === 1
-            //TRANSLATORS: Description of the menu item
-            text: i18n.tr("Settings")
-            onTriggered: mainStack.push(Qt.resolvedUrl("../Settings.qml"))
-        }
-        ]
-        numberOfSlots: mainStack.depth === 1 ? 2 : 1
+CalcDays {
+    id: autoUpdate
+}        
+
+Metric {
+    property string circleMetric
+    id: metric
+    name: "nCounter"
+    format: circleMetric
+    emptyFormat: i18n.tr("Check nCounter")
+    domain: "ncounter.joe"
+}
+
+QtObject {
+    Component.onCompleted: {
+        metric.circleMetric = autoUpdate.report
+        metric.update(0)
+        console.log("nCounter metric updated automatically\n")
+        Qt.quit()
     }
 }
+
+            

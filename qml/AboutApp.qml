@@ -62,8 +62,17 @@ Page {
             }
 
 	    DefaultLabel {
-		text: i18n.tr("How long has it been since your last nCounter? Trying to start something or trying to quit something? Enter the event date and name, then press 'Track' to find out how long it has been. Details appear in the user metrics on the lock screen.")
+		text: i18n.tr("How long has it been since the last nCounter? Trying to start something or trying to quit something? Enter the event date and name, then press 'Track' to find out how long it has been. Details appear in the user metrics on the lock screen.")
 	    }
+
+            Button {
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: i18n.tr("Report Bugs")
+                color: UbuntuColors.orange
+                onClicked: {
+                    Qt.openUrlExternally("https://github.com/userj/ncounter")
+                }
+            }
 
         }
     }

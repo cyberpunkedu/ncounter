@@ -46,6 +46,13 @@ Window {
         console.log("Version: " + version);
     }
 
+    Settings {
+        id: settings
+        property string myEvent
+        property date myDate
+        property string myReport
+    }
+
     MainView {
         id: root
         objectName: 'mainView'
@@ -53,12 +60,6 @@ Window {
         automaticOrientation: true
         anchorToKeyboard: true
         anchors.fill: parent
-
-        Settings {
-            id: settings
-            property string myEvent: i18n.tr("last nCounter")
-            property date myDate
-        }
 
         PageStack {
             id: mainStack
