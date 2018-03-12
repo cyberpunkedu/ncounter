@@ -2,7 +2,7 @@
 //
 // This file is part of the Say Ubuntu application.
 //
-// Copyright (c) 2017 
+// Copyright (c) 2017
 //
 // Maintained by Joe (@exar_kun) <joe@ubports.com>
 //
@@ -31,5 +31,5 @@ Item {
     property int theMonth: settings.myDate.getMonth()
     property int theDay: settings.myDate.getDate()
     property string theEvent: settings.myEvent
-    property string report: theEvent + ":\n" + Dater.daySince(theYear, theMonth, theDay) + " ago "
+    property string report: theEvent + ":\n" + Dater.daySince(theYear, theMonth, theDay)
 }

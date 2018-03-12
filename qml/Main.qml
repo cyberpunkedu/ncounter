@@ -2,7 +2,7 @@
 //
 // This file is part of the nCounter application.
 //
-// Copyright (c) 2017 
+// Copyright (c) 2017
 //
 // Maintained by Joe (@exar_kun) <joe@ubports.com>
 //
@@ -39,7 +39,7 @@ Window {
     maximumWidth: Screen.width
     maximumHeight: Screen.height
 
-    property string version: "0.1a"
+    property string version: "0.2"
 
     Component.onCompleted: {
         console.log("nCounter started\n")
@@ -51,6 +51,9 @@ Window {
         property string myEvent
         property date myDate
         property string myReport
+        property string myLast
+        property string lastEvent
+        property int restarts: 0
     }
 
     MainView {

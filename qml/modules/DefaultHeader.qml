@@ -2,7 +2,7 @@
 //
 // This file is part of the nCounter application.
 //
-// Copyright (c) 2017 
+// Copyright (c) 2017
 //
 // Maintained by Joe (@exar_kun) <joe@ubports.com>
 //
@@ -32,12 +32,12 @@ PageHeader {
         actions: [
         Action {
             iconName: "info"
-	    visible: mainStack.depth === 1
+	          visible: mainStack.depth === 1
             text: i18n.tr("About App")
             onTriggered: mainStack.push(Qt.resolvedUrl("../AboutApp.qml"))
         },
         Action {
-            iconName: "settings"
+            iconName: (settings.myEvent == 0) ? "add" : "settings"
             visible: mainStack.depth === 1
             //TRANSLATORS: Description of the menu item
             text: i18n.tr("Settings")

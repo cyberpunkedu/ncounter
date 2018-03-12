@@ -78,7 +78,7 @@ Page {
                 mode: "Years|Months|Days"
                 date: new Date()
             }
-         
+
             Metric {
                 property string circleMetric
                 id: metric
@@ -87,18 +87,19 @@ Page {
                 emptyFormat: i18n.tr("Check nCounter")
                 domain: "ncounter.joe"
             }
-            
- 
+
             CalcDays {
                 id: dateSaved
             }
-                
+
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter
                 id: saveDate
                 text: (settings.myEvent == 0) ? i18n.tr("Track") : i18n.tr("Update")
                 color: UbuntuColors.orange
                 onClicked: {
+                    (settings.myEvent == event.text && settings.myReport == dateSaved.report) ? settings.restarts += 1 : settings.restarts = 0;
+                    (settings.lastEvent == event.text) ? settings.myLast = dateSaved.report : settings.myLast = 0 , settings.lastEvent = event.text;
                     settings.myEvent = event.text
                     settings.myDate = eventDate.date
                     settings.myReport = dateSaved.report
@@ -106,12 +107,29 @@ Page {
                     metric.update(0)
                     console.log("nCounter event updated\n")
                 }
-            }                                                     
-           
+            }
 
             DefaultLabel {
                 id: record
-                text: (settings.myEvent == 0) ? "Add event above": dateSaved.report
+                text: (settings.myEvent == 0) ? i18n.tr("Add event above"): dateSaved.report + " ago"
+            }
+
+            DefaultLabel {
+                id: previous
+                visible: (settings.myLast == 0) ? false : true
+                text: i18n.tr("Previous ") + settings.myLast
+            }
+
+            DefaultLabel {
+                id: falseStart
+                visible: (settings.restarts == 0) ? false : true
+                text: i18n.tr("Restarts: ") + settings.restarts
+            }
+
+            DefaultLabel {
+                id: resetNotice
+                visible: (settings.restarts == 0) ? false : true
+                text: i18n.tr("To completely start over, delete the event name and press 'Update'")
             }
 
         }

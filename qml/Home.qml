@@ -26,7 +26,6 @@ import QtQuick 2.4
 import Ubuntu.Components 1.3
 import "modules"
 import QtMultimedia 5.0
-import "../assets/newLines.js" as Liner
 import UserMetrics 0.1
 
 Page {
@@ -40,13 +39,10 @@ Page {
             topMargin: homePage.header.height
         }
 
-
         Column {
             id: homeColumn
             width: scroll.width
             spacing: units.gu(2)
-
-
 
             Rectangle {
                 id: spacer
@@ -63,17 +59,17 @@ Page {
                 domain: "ncounter.joe"
             }
 
+            DefaultLabel {
+                id: testMetric
+                font.pixelSize: 70
+                text: (settings.myEvent == 0) ? i18n.tr("Add event to start counting") : settings.myReport + " ago";
+            }
+
+            // Refers to CalcDays module
             CalcDays{
                 id: updateReport
-                Component.onCompleted: {
-                        settings.myReport = updateReport.report
-                        metric.circleMetric = updateReport.report
-                        metric.update(0)
-                        console.log("nCounter metric updated on load\n")
-                }
-
                 Timer {
-                    interval: 60000; running: true; repeat: true
+                    interval: 5000; running: true; repeat: true
                     onTriggered: {
                         settings.myReport = updateReport.report
                         metric.circleMetric = updateReport.report
@@ -84,15 +80,30 @@ Page {
             }
 
             DefaultLabel {
-                id: testMetric
-                font.pixelSize: 70
-                text: (settings.myEvent == 0) ? "Add event in settings" : settings.myReport 
+                id: previous
+                visible: (settings.myLast == 0) ? false : true
+                text: i18n.tr("Previous ") + settings.myLast
             }
 
+            DefaultLabel {
+                id: falseStart
+                visible: (settings.restarts == 0) ? false : true
+                text: i18n.tr("Restarts: ") + settings.restarts
+            }
 
-            
+            Button {
+               anchors.horizontalCenter: parent.horizontalCenter
+               color: UbuntuColors.green
+               id: addEvent
+               text: i18n.tr("+")
+               visible: (settings.myEvent == 0) ? true : false
+               onClicked: {
+                   pageStack.push(Qt.resolvedUrl("Settings.qml"))
+               }
+            }
+
             Image {
-	        id: daysImage
+	              id: daysImage
                 anchors.horizontalCenter: parent.horizontalCenter
                 horizontalAlignment: Image.AlignHCenter
                 source: (settings.myEvent == 0) ? Qt.resolvedUrl("../assets/daysg.svg") : Qt.resolvedUrl("../assets/days.svg")
@@ -103,8 +114,9 @@ Page {
             DefaultLabel {
                 property int longness: quoteList.theList.length - 1
                 property int quoteNum: Math.floor(Math.random() * longness)
-		property string theQuote: quoteList.theList[quoteNum]
+		            property string theQuote: quoteList.theList[quoteNum]
                 id: quote
+                visible: (settings.myEvent == 0) ? false : true
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: theQuote
                 Timer {
@@ -122,7 +134,7 @@ Page {
                     "And not only so, but we also boast in our tribulations, knowing that tribulation produces endurance",
                     "Knowing that the proving of your faith works out endurance",
                     "Rejoice in hope; endure in tribulation; persevere in prayer",
-                    "The discretion of a man makes him slow to anger", 
+                    "The discretion of a man makes him slow to anger",
                     "Better is the end of a thing than its beginning",
                     "Better is patience of spirit than haughtiness of spirit",
                     "Love suffers long. Love is kind; it is not jealous",

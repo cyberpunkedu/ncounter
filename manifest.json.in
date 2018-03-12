@@ -9,7 +9,7 @@
             "desktop":  "ncounter.desktop"
         }
     },
-    "version": "0.1a",
+    "version": "0.2",
     "maintainer": "Joe <joe@ubports.com>",
     "framework" : "ubuntu-sdk-15.04.6"
 }

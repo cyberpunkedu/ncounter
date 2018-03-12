@@ -1,6 +1,6 @@
 # nCounter
 
-How long has it been since the last nCounter? Trying to start something or trying to quit something? Enter the event date and name, then press 'Track' to find out how long it has been. Details appear in the user metrics on the lock screen.
+How long has it been since the last nCounter? Trying to start something or trying to quit something on a daily basis? Enter the event date and name, then press 'Track' to find out how long it has been. Details appear in the user metrics on the lock screen.
 
 Only one item is trackable. Stay focused one day at a time.
 
@@ -12,16 +12,16 @@ Set up [clickable](https://github.com/bhdouglass/clickable) and run `clickable` 
 
 JavaScript base on script by [Chris Hallberg](https://javascriptsource.com/days-since/)
 
-Thanks to the help of the [Ubuntu Touch App Dev group](https://t.me/UbuntuAppDevEN).
+Thanks to the help of the [Ubuntu Touch App Dev group](https://t.me/UbuntuAppDevEN) and Wayne(out there).
 
-## Future Improvements
+## Need Help With
 
 * Improve design
 * Make JavaScript translatable
-* Fix negative month numbers.
+* Improve calculation script
 * Ability to track more events?
 * Ability to count down to an event?
-* Add polld to update metric automatically?
+* Add polld to update metric outside of application
 
 ## Legal
 
@@ -34,4 +34,3 @@ This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
-
