@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ncounter.joe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-12 03:31+0000\n"
+"POT-Creation-Date: 2018-03-13 04:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: ../qml/update-metric.qml:38 ../qml/Home.qml:58 ../qml/Settings.qml:87
+#: ../qml/update-metric.qml:38 ../qml/Home.qml:59 ../qml/Settings.qml:87
 msgid "Check nCounter"
 msgstr ""
 
@@ -27,19 +27,19 @@ msgstr ""
 msgid "nCounter"
 msgstr ""
 
-#: ../qml/Home.qml:65
+#: ../qml/Home.qml:72
 msgid "Add event to start counting"
 msgstr ""
 
-#: ../qml/Home.qml:85 ../qml/Settings.qml:120
+#: ../qml/Home.qml:88 ../qml/Settings.qml:120
 msgid "Previous "
 msgstr ""
 
-#: ../qml/Home.qml:91 ../qml/Settings.qml:126
+#: ../qml/Home.qml:94 ../qml/Settings.qml:126
 msgid "Restarts: "
 msgstr ""
 
-#: ../qml/Home.qml:98
+#: ../qml/Home.qml:101
 msgid "+"
 msgstr ""
 

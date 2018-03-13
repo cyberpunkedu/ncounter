@@ -32,4 +32,10 @@ Item {
     property int theDay: settings.myDate.getDate()
     property string theEvent: settings.myEvent
     property string report: theEvent + ":\n" + Dater.daySince(theYear, theMonth, theDay)
+    Timer {
+        interval: 1000; running: true; repeat: true
+        onTriggered: {
+            report = theEvent + ":\n" + Dater.daySince(theYear, theMonth, theDay)
+        }
+    }
 }

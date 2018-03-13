@@ -68,7 +68,7 @@ Page {
 
             DatePicker {
                 anchors.horizontalCenter: parent.horizontalCenter
-                height: 250
+                height: 300
                 id: eventDate
                 minimum: {
                     var d = new Date();

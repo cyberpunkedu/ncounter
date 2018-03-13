@@ -50,6 +50,7 @@ Page {
                 width: 20
             }
 
+            // Metric to display on lock screen
             Metric {
                 property string circleMetric
                 id: metric
@@ -59,17 +60,18 @@ Page {
                 domain: "ncounter.joe"
             }
 
-            DefaultLabel {
-                id: testMetric
-                font.pixelSize: 70
-                text: (settings.myEvent == 0) ? i18n.tr("Add event to start counting") : settings.myReport + " ago";
-            }
-
             // Refers to CalcDays module
             CalcDays{
                 id: updateReport
+            }
+
+            // Displays nCounter on Home Page
+            DefaultLabel {
+                id: showCounter
+                font.pixelSize: 70
+                text: (settings.myEvent == 0) ? i18n.tr("Add event to start counting") : settings.myReport + " ago";
                 Timer {
-                    interval: 5000; running: true; repeat: true
+                    interval: 1000; running: true; repeat: true
                     onTriggered: {
                         settings.myReport = updateReport.report
                         metric.circleMetric = updateReport.report
@@ -79,6 +81,7 @@ Page {
                 }
             }
 
+            // Displays last counter if applicable
             DefaultLabel {
                 id: previous
                 visible: (settings.myLast == 0) ? false : true
