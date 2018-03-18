@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ncounter.joe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-13 04:02+0000\n"
+"POT-Creation-Date: 2018-03-18 20:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: ../qml/update-metric.qml:38 ../qml/Home.qml:59 ../qml/Settings.qml:87
-msgid "Check nCounter"
-msgstr ""
-
 #: ../qml/Home.qml:33 ../qml/AboutApp.qml:31 ../qml/Main.qml:34
 #: ../qml/Settings.qml:35 ncounter.desktop.in.h:1
 msgid "nCounter"
+msgstr ""
+
+#: ../qml/Home.qml:59 ../qml/Settings.qml:87
+msgid "Check nCounter"
 msgstr ""
 
 #: ../qml/Home.qml:72
