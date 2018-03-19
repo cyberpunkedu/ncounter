@@ -58,6 +58,7 @@ Page {
                  text: i18n.tr("Event Name & Date:")
             }
 
+            // i18n.tr("Get user input for event name")
             TextField {
                  id: event
                  placeholderText: i18n.tr("Input event name")
@@ -66,6 +67,7 @@ Page {
                  focus: true
              }
 
+            // i18n.tr("Get user input for event date")
             DatePicker {
                 anchors.horizontalCenter: parent.horizontalCenter
                 height: 300
@@ -79,6 +81,7 @@ Page {
                 date: new Date()
             }
 
+            // i18n.tr("Metric to display on lock screen")
             Metric {
                 property string circleMetric
                 id: metric
@@ -88,10 +91,12 @@ Page {
                 domain: "ncounter.joe"
             }
 
+            // i18n.tr("Refers to CalcDays module")
             CalcDays {
                 id: dateSaved
             }
 
+            // i18n.tr("Button to activate counter or update settings in Main.qml")
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter
                 id: saveDate
@@ -109,23 +114,27 @@ Page {
                 }
             }
 
+            // i18n.tr("Preview of event settings if added")
             DefaultLabel {
                 id: record
                 text: (settings.myEvent == 0) ? i18n.tr("Add event above"): dateSaved.report + " ago"
             }
 
+            // i18n.tr("Displays previous stats if applicable")
             DefaultLabel {
                 id: previous
                 visible: (settings.myLast == 0) ? false : true
                 text: i18n.tr("Previous ") + settings.myLast
             }
 
+            // i18n.tr("Displays number of restarts if applicable")
             DefaultLabel {
                 id: falseStart
                 visible: (settings.restarts == 0) ? false : true
                 text: i18n.tr("Restarts: ") + settings.restarts
             }
 
+            // i18n.tr("Displays reset instructions if applicable")
             DefaultLabel {
                 id: resetNotice
                 visible: (settings.restarts == 0) ? false : true

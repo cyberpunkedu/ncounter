@@ -46,6 +46,7 @@ Window {
         console.log("Version: " + version);
     }
 
+    // i18n.tr("Stores event name, date, calculations, etc.")
     Settings {
         id: settings
         property string myEvent

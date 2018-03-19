@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ncounter.joe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-18 20:46+0000\n"
+"POT-Creation-Date: 2018-03-19 14:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "nCounter"
 msgstr ""
 
-#: ../qml/Home.qml:59 ../qml/Settings.qml:87
+#: ../qml/Home.qml:59 ../qml/Settings.qml:90
 msgid "Check nCounter"
 msgstr ""
 
@@ -31,16 +31,72 @@ msgstr ""
 msgid "Add event to start counting"
 msgstr ""
 
-#: ../qml/Home.qml:88 ../qml/Settings.qml:120
+#: ../qml/Home.qml:88 ../qml/Settings.qml:127
 msgid "Previous "
 msgstr ""
 
-#: ../qml/Home.qml:94 ../qml/Settings.qml:126
+#: ../qml/Home.qml:95 ../qml/Settings.qml:134
 msgid "Restarts: "
 msgstr ""
 
-#: ../qml/Home.qml:101
+#: ../qml/Home.qml:103
 msgid "+"
+msgstr ""
+
+#: ../qml/Home.qml:142
+msgid ""
+"And not only so, but we also boast in our tribulations, knowing that "
+"tribulation produces endurance"
+msgstr ""
+
+#: ../qml/Home.qml:143
+msgid "Knowing that the proving of your faith works out endurance"
+msgstr ""
+
+#: ../qml/Home.qml:144
+msgid "Rejoice in hope; endure in tribulation; persevere in prayer"
+msgstr ""
+
+#: ../qml/Home.qml:145
+msgid "The discretion of a man makes him slow to anger"
+msgstr ""
+
+#: ../qml/Home.qml:146
+msgid "Better is the end of a thing than its beginning"
+msgstr ""
+
+#: ../qml/Home.qml:147
+msgid "Better is patience of spirit than haughtiness of spirit"
+msgstr ""
+
+#: ../qml/Home.qml:148
+msgid "Love suffers long. Love is kind; it is not jealous"
+msgstr ""
+
+#: ../qml/Home.qml:149
+msgid ""
+"With all lowliness and meekness, with long-suffering, bearing one another in "
+"love"
+msgstr ""
+
+#: ../qml/Home.qml:150
+msgid "And endurance, approvedness; and approvedness, hope"
+msgstr ""
+
+#: ../qml/Home.qml:151
+msgid ""
+"And let endurance have its perfect work that you may be perfect and entire, "
+"lacking in nothing"
+msgstr ""
+
+#: ../qml/Home.qml:152
+msgid ""
+"And in knowledge, self-control; and in self-control, endurance; and in "
+"endurance, godliness"
+msgstr ""
+
+#: ../qml/Home.qml:153
+msgid "Do. Or do not. There is no try."
 msgstr ""
 
 #: ../qml/AboutApp.qml:47
@@ -51,7 +107,7 @@ msgstr ""
 msgid "Version: "
 msgstr ""
 
-#: ../qml/AboutApp.qml:73
+#: ../qml/AboutApp.qml:74
 msgid "Report Bugs"
 msgstr ""
 
@@ -74,22 +130,22 @@ msgstr ""
 msgid "Event Name & Date:"
 msgstr ""
 
-#: ../qml/Settings.qml:63
+#: ../qml/Settings.qml:64
 msgid "Input event name"
 msgstr ""
 
-#: ../qml/Settings.qml:98
+#: ../qml/Settings.qml:103
 msgid "Track"
 msgstr ""
 
-#: ../qml/Settings.qml:98
+#: ../qml/Settings.qml:103
 msgid "Update"
 msgstr ""
 
-#: ../qml/Settings.qml:114
+#: ../qml/Settings.qml:120
 msgid "Add event above"
 msgstr ""
 
-#: ../qml/Settings.qml:132
+#: ../qml/Settings.qml:141
 msgid "To completely start over, delete the event name and press 'Update'"
 msgstr ""

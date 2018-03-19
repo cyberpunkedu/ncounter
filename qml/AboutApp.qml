@@ -68,6 +68,7 @@ Page {
     \n \n To completely start over, delete the event name and press 'Update'")
 	    }
 
+            // i18n.tr("Opens github project page in browser")
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: i18n.tr("Report Bugs")

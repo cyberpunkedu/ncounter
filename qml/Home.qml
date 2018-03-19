@@ -50,7 +50,7 @@ Page {
                 width: 20
             }
 
-            // Metric to display on lock screen
+            // i18n.tr("Metric to display on lock screen")
             Metric {
                 property string circleMetric
                 id: metric
@@ -60,12 +60,12 @@ Page {
                 domain: "ncounter.joe"
             }
 
-            // Refers to CalcDays module
+            // i18n.tr("Refers to CalcDays module")
             CalcDays{
                 id: updateReport
             }
 
-            // Displays nCounter on Home Page
+            // i18n.tr("Displays days counted on Home Page")
             DefaultLabel {
                 id: showCounter
                 font.pixelSize: 70
@@ -74,26 +74,28 @@ Page {
                     interval: 1000; running: true; repeat: true
                     onTriggered: {
                         settings.myReport = updateReport.report
-                        metric.circleMetric = updateReport.report
+                        metric.circleMetric = updateReport.report + " ago"
                         metric.update(0)
                         console.log("nCounter metric updated by timer\n")
                     }
                 }
             }
 
-            // Displays last counter if applicable
+            // i18n.tr("Displays last counter if applicable")
             DefaultLabel {
                 id: previous
                 visible: (settings.myLast == 0) ? false : true
                 text: i18n.tr("Previous ") + settings.myLast
             }
 
+            // i18n.tr("Displays number of restarts if applicable")
             DefaultLabel {
                 id: falseStart
                 visible: (settings.restarts == 0) ? false : true
                 text: i18n.tr("Restarts: ") + settings.restarts
             }
 
+            // i18n.tr("Displays an 'add' button if no event set")
             Button {
                anchors.horizontalCenter: parent.horizontalCenter
                color: UbuntuColors.green
@@ -105,6 +107,7 @@ Page {
                }
             }
 
+            // i18n.tr("Displays grey or yellow graphic depending on event setting")
             Image {
 	              id: daysImage
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -114,6 +117,7 @@ Page {
                 height: units.gu(20)
             }
 
+            // i18n.tr("Displays random quote from quote list")
             DefaultLabel {
                 property int longness: quoteList.theList.length - 1
                 property int quoteNum: Math.floor(Math.random() * longness)
@@ -131,21 +135,22 @@ Page {
                 }
             }
 
+            // i18n.tr("List of quotes. Last quote does not get used for some reason.")
             Item {
                 id: quoteList
                 property var theList: [
-                    "And not only so, but we also boast in our tribulations, knowing that tribulation produces endurance",
-                    "Knowing that the proving of your faith works out endurance",
-                    "Rejoice in hope; endure in tribulation; persevere in prayer",
-                    "The discretion of a man makes him slow to anger",
-                    "Better is the end of a thing than its beginning",
-                    "Better is patience of spirit than haughtiness of spirit",
-                    "Love suffers long. Love is kind; it is not jealous",
-                    "With all lowliness and meekness, with long-suffering, bearing one another in love",
-                    "And endurance, approvedness; and approvedness, hope",
-                    "And let endurance have its perfect work that you may be perfect and entire, lacking in nothing",
-                    "And in knowledge, self-control; and in self-control, endurance; and in endurance, godliness",
-                    "Do. Or do not. There is no try."
+                    i18n.tr("And not only so, but we also boast in our tribulations, knowing that tribulation produces endurance"),
+                    i18n.tr("Knowing that the proving of your faith works out endurance"),
+                    i18n.tr("Rejoice in hope; endure in tribulation; persevere in prayer"),
+                    i18n.tr("The discretion of a man makes him slow to anger"),
+                    i18n.tr("Better is the end of a thing than its beginning"),
+                    i18n.tr("Better is patience of spirit than haughtiness of spirit"),
+                    i18n.tr("Love suffers long. Love is kind; it is not jealous"),
+                    i18n.tr("With all lowliness and meekness, with long-suffering, bearing one another in love"),
+                    i18n.tr("And endurance, approvedness; and approvedness, hope"),
+                    i18n.tr("And let endurance have its perfect work that you may be perfect and entire, lacking in nothing"),
+                    i18n.tr("And in knowledge, self-control; and in self-control, endurance; and in endurance, godliness"),
+                    i18n.tr("Do. Or do not. There is no try.")
                ]
             }
         }

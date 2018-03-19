@@ -26,6 +26,7 @@ import QtQuick 2.4
 import Ubuntu.Components 1.3
 import "../../assets/daySince.js" as Dater
 
+//i18n.tr("This module runs the calculation to determine time since the event")
 Item {
     property int theYear: settings.myDate.getFullYear()
     property int theMonth: settings.myDate.getMonth()
