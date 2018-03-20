@@ -39,7 +39,7 @@ Window {
     maximumWidth: Screen.width
     maximumHeight: Screen.height
 
-    property string version: "0.2"
+    property string version: "1.0"
 
     Component.onCompleted: {
         console.log("nCounter started\n")

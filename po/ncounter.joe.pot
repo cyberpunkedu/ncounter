@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ncounter.joe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-19 14:24+0000\n"
+"POT-Creation-Date: 2018-03-20 16:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,25 +18,49 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: ../qml/Home.qml:33 ../qml/AboutApp.qml:31 ../qml/Main.qml:34
-#: ../qml/Settings.qml:35 ncounter.desktop.in.h:1
+#: ../qml/Main.qml:34 ../qml/Settings.qml:35 ../qml/Home.qml:33
+#: ../qml/AboutApp.qml:31 ncounter.desktop.in.h:1
 msgid "nCounter"
 msgstr ""
 
-#: ../qml/Home.qml:59 ../qml/Settings.qml:90
+#: ../qml/Settings.qml:58
+msgid "Event Name & Date:"
+msgstr ""
+
+#: ../qml/Settings.qml:64
+msgid "Input event name"
+msgstr ""
+
+#: ../qml/Settings.qml:90 ../qml/Home.qml:59
 msgid "Check nCounter"
+msgstr ""
+
+#: ../qml/Settings.qml:103
+msgid "Track"
+msgstr ""
+
+#: ../qml/Settings.qml:103
+msgid "Update"
+msgstr ""
+
+#: ../qml/Settings.qml:120
+msgid "Add event above"
+msgstr ""
+
+#: ../qml/Settings.qml:127 ../qml/Home.qml:88
+msgid "Previous "
+msgstr ""
+
+#: ../qml/Settings.qml:134 ../qml/Home.qml:95
+msgid "Restarts: "
+msgstr ""
+
+#: ../qml/Settings.qml:141
+msgid "To completely start over, delete the event name and press 'Update'"
 msgstr ""
 
 #: ../qml/Home.qml:72
 msgid "Add event to start counting"
-msgstr ""
-
-#: ../qml/Home.qml:88 ../qml/Settings.qml:127
-msgid "Previous "
-msgstr ""
-
-#: ../qml/Home.qml:95 ../qml/Settings.qml:134
-msgid "Restarts: "
 msgstr ""
 
 #: ../qml/Home.qml:103
@@ -124,28 +148,4 @@ msgstr ""
 #. TRANSLATORS: Description of the menu item
 #: ../qml/modules/DefaultHeader.qml:43
 msgid "Settings"
-msgstr ""
-
-#: ../qml/Settings.qml:58
-msgid "Event Name & Date:"
-msgstr ""
-
-#: ../qml/Settings.qml:64
-msgid "Input event name"
-msgstr ""
-
-#: ../qml/Settings.qml:103
-msgid "Track"
-msgstr ""
-
-#: ../qml/Settings.qml:103
-msgid "Update"
-msgstr ""
-
-#: ../qml/Settings.qml:120
-msgid "Add event above"
-msgstr ""
-
-#: ../qml/Settings.qml:141
-msgid "To completely start over, delete the event name and press 'Update'"
 msgstr ""
