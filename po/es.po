@@ -1,0 +1,164 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ncounter.joe\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-22 16:41+0000\n"
+"PO-Revision-Date: 2018-03-22 18:25+0100\n"
+"Last-Translator: advocatux <advocatux@airpost.net>\n"
+"Language-Team: UBports Spanish Team\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/Main.qml:34 ../qml/Settings.qml:35 ../qml/Home.qml:33
+#: ../qml/AboutApp.qml:31 ncounter.desktop.in.h:1
+msgid "nCounter"
+msgstr "nCounter"
+
+#: ../qml/Settings.qml:58
+msgid "Event Name & Date:"
+msgstr "Nombre y fecha del evento:"
+
+#: ../qml/Settings.qml:64
+msgid "Input event name"
+msgstr "Nombre del evento de entrada"
+
+#: ../qml/Settings.qml:90 ../qml/Home.qml:59
+msgid "Check nCounter"
+msgstr "Revisar nCounter"
+
+#: ../qml/Settings.qml:103
+msgid "Track"
+msgstr "Seguir"
+
+#: ../qml/Settings.qml:103
+msgid "Update"
+msgstr "Actualizar"
+
+#: ../qml/Settings.qml:120
+msgid "Add event above"
+msgstr "Añadir el evento de arriba"
+
+#: ../qml/Settings.qml:127 ../qml/Home.qml:88
+msgid "Previous "
+msgstr "Previo "
+
+#: ../qml/Settings.qml:134 ../qml/Home.qml:95
+msgid "Restarts: "
+msgstr "Reinicia: "
+
+#: ../qml/Settings.qml:141 ../qml/AboutApp.qml:69
+msgid "To completely start over, delete the event name and press 'Update'"
+msgstr "Para comenzar de nuevo, borre el nombre del evento y pulse 'Actualizar'"
+
+#: ../qml/Home.qml:72
+msgid "Add event to start counting"
+msgstr "Añadir evento para comenzar a contar"
+
+#: ../qml/Home.qml:103
+msgid "+"
+msgstr "+"
+
+#: ../qml/Home.qml:142
+msgid ""
+"And not only so, but we also boast in our tribulations, knowing that "
+"tribulation produces endurance"
+msgstr ""
+"Y no solo eso, sino que también nos jactamos en nuestras tribulaciones, "
+"sabiendo que la tribulación produce resistencia"
+
+#: ../qml/Home.qml:143
+msgid "Knowing that the proving of your faith works out endurance"
+msgstr "Sabiendo que la prueba de su fe ejercita la resistencia"
+
+#: ../qml/Home.qml:144
+msgid "Rejoice in hope; endure in tribulation; persevere in prayer"
+msgstr ""
+"Regocíjese en la esperanza; aguante en la tribulación; "
+"persevere en la oración"
+
+#: ../qml/Home.qml:145
+msgid "The discretion of a man makes him slow to anger"
+msgstr "La prudencia hace al hombre lento a la ira"
+
+#: ../qml/Home.qml:146
+msgid "Better is the end of a thing than its beginning"
+msgstr "Es mejor el final de algo que su comienzo"
+
+#: ../qml/Home.qml:147
+msgid "Better is patience of spirit than haughtiness of spirit"
+msgstr ""
+"Es mejor la paciencia del espíritu que la arrogancia "
+"del espíritu"
+
+#: ../qml/Home.qml:148
+msgid "Love suffers long. Love is kind; it is not jealous"
+msgstr "El amor sufre mucho. El amor es amable; no es celoso"
+
+#: ../qml/Home.qml:149
+msgid ""
+"With all lowliness and meekness, with long-suffering, bearing one another in "
+"love"
+msgstr ""
+"Con toda humildad y docilidad, con longanimidad, teniendo uno al otro en "
+"el amor"
+
+#: ../qml/Home.qml:150
+msgid "And endurance, approvedness; and approvedness, hope"
+msgstr "Y resistencia, aprobación; y aprobación, esperanza"
+
+#: ../qml/Home.qml:151
+msgid ""
+"And let endurance have its perfect work that you may be perfect and entire, "
+"lacking in nothing"
+msgstr ""
+"Y deje que la resistencia haga su trabajo perfecto para que pueda ser "
+"perfecto y completo, no falto de nada"
+
+#: ../qml/Home.qml:152
+msgid ""
+"And in knowledge, self-control; and in self-control, endurance; and in "
+"endurance, godliness"
+msgstr ""
+"Y en conocimiento, autocontrol; y en autocontrol, resistencia; y en "
+"resistencia, devoción"
+
+#: ../qml/Home.qml:153
+msgid "Do. Or do not. There is no try."
+msgstr "Hazlo. O no lo hagas. Pero no lo intentes."
+
+#: ../qml/AboutApp.qml:47
+msgid "About nCounter"
+msgstr "Acerca de nCounter"
+
+#: ../qml/AboutApp.qml:61
+msgid "Version: "
+msgstr "Versión: "
+
+#: ../qml/AboutApp.qml:65
+msgid ""
+"How long has it been since the last nCounter? Enter the event date and name, "
+"then press 'Track' to find out how long it has been."
+msgstr ""
+"¿Cuánto tiempo ha pasado desde el último nCounter? Introduzca la fecha y "
+"el nombre del evento, luego pulse 'Seguir' para ver cuánto ha sido."
+
+#: ../qml/AboutApp.qml:75
+msgid "Report Bugs"
+msgstr "Informar de errores"
+
+#: ../qml/modules/DefaultHeader.qml:36
+msgid "About App"
+msgstr "Acerca de la aplicación"
+
+#. TRANSLATORS: Description of the menu item
+#: ../qml/modules/DefaultHeader.qml:43
+msgid "Settings"
+msgstr "Configuración" 
