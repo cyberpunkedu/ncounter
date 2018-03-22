@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ncounter.joe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-20 16:02+0000\n"
+"POT-Creation-Date: 2018-03-22 15:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,13 +131,17 @@ msgstr ""
 msgid "Version: "
 msgstr ""
 
-#: ../qml/AboutApp.qml:74
+#: ../qml/AboutApp.qml:72
 msgid "Report Bugs"
 msgstr ""
 
 #: ../qml/AboutApp.qml:65
-msgid "How long has it been since the last nCounter?"
-msgid_plural "Track"
+msgid ""
+"How long has it been since the last nCounter? Trying to start something or "
+"trying to quit something? Enter the event date and name, then press 'Track' "
+"to find out how long it has been. Details appear in the user metrics on the "
+"lock screen."
+msgid_plural "Update"
 msgstr[0] ""
 msgstr[1] ""
 
