@@ -62,11 +62,14 @@ Page {
             }
 
 	    DefaultLabel {
-		text: i18n.tr("How long has it been since the last nCounter? Trying to start something or trying to quit something? Enter the event date and name, then press 'Track' to find out how long it has been. Details appear in the user metrics on the lock screen.
-    \n \n To completely start over, delete the event name and press 'Update'")
+		      text: i18n.tr("How long has it been since the last nCounter? Enter the event date and name, then press 'Track' to find out how long it has been.")
 	    }
 
-            // i18n.tr("Opens github project page in browser")
+      DefaultLabel {
+          text: i18n.tr("To completely start over, delete the event name and press 'Update'")
+      }
+
+            // i18n.tr("Opens github project page in browser")"
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: i18n.tr("Report Bugs")
