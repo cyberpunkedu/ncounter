@@ -17,7 +17,6 @@ Thanks to the help of the [Ubuntu Touch App Dev group](https://t.me/UbuntuAppDev
 ## Need Help With
 
 * Improve design
-* Make JavaScript translatable
 * Improve calculation script
 * Ability to track more events?
 * Ability to count down to an event?
