@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ncounter.joe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-23 04:39+0000\n"
-"PO-Revision-Date: 2018-03-23 11:30+0100\n"
+"POT-Creation-Date: 2018-03-23 17:31+0000\n"
+"PO-Revision-Date: 2018-03-23 19:40+0100\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: UBports Spanish Team\n"
 "Language: es\n"
@@ -47,8 +47,8 @@ msgid "Add event above"
 msgstr "Añadir el evento de arriba"
 
 #: ../qml/Settings.qml:120 ../qml/Home.qml:72 ../qml/Home.qml:77
-msgid " ago"
-msgstr "hace "
+msgid "%1 ago"
+msgstr "hace %1"
 
 #: ../qml/Settings.qml:127 ../qml/Home.qml:88
 msgid "Previous "
