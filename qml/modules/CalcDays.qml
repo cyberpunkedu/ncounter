@@ -28,15 +28,20 @@ import "../../assets/daySince.js" as Dater
 
 //i18n.tr("This module runs the calculation to determine time since the event")
 Item {
+    property string yearWord: i18n.tr("Year(s)")
+    property string monthWord: i18n.tr("Month(s)")
+    property string dayWord: i18n.tr("Day(s)")
+    property string andWord: i18n.tr("and")
+    property string momentWord: i18n.tr("A moment")
     property int theYear: settings.myDate.getFullYear()
     property int theMonth: settings.myDate.getMonth()
     property int theDay: settings.myDate.getDate()
     property string theEvent: settings.myEvent
-    property string report: theEvent + ":\n" + Dater.daySince(theYear, theMonth, theDay)
+    property string report: theEvent + ":\n" + Dater.daySince(theYear, theMonth, theDay, yearWord, monthWord, dayWord, andWord, momentWord)
     Timer {
         interval: 1000; running: true; repeat: true
         onTriggered: {
-            report = theEvent + ":\n" + Dater.daySince(theYear, theMonth, theDay)
+            report = theEvent + ":\n" + Dater.daySince(theYear, theMonth, theDay, yearWord, monthWord, dayWord, andWord, momentWord)
         }
     }
 }

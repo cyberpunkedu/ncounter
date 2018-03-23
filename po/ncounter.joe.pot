@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ncounter.joe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-22 16:41+0000\n"
+"POT-Creation-Date: 2018-03-23 04:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,6 +44,10 @@ msgstr ""
 
 #: ../qml/Settings.qml:120
 msgid "Add event above"
+msgstr ""
+
+#: ../qml/Settings.qml:120 ../qml/Home.qml:72 ../qml/Home.qml:77
+msgid " ago"
 msgstr ""
 
 #: ../qml/Settings.qml:127 ../qml/Home.qml:88
@@ -138,6 +142,26 @@ msgstr ""
 
 #: ../qml/AboutApp.qml:75
 msgid "Report Bugs"
+msgstr ""
+
+#: ../qml/modules/CalcDays.qml:31
+msgid "Year(s)"
+msgstr ""
+
+#: ../qml/modules/CalcDays.qml:32
+msgid "Month(s)"
+msgstr ""
+
+#: ../qml/modules/CalcDays.qml:33
+msgid "Day(s)"
+msgstr ""
+
+#: ../qml/modules/CalcDays.qml:34
+msgid "and"
+msgstr ""
+
+#: ../qml/modules/CalcDays.qml:35
+msgid "A moment"
 msgstr ""
 
 #: ../qml/modules/DefaultHeader.qml:36
