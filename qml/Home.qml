@@ -69,12 +69,12 @@ Page {
             DefaultLabel {
                 id: showCounter
                 font.pixelSize: 70
-                text: (settings.myEvent == 0) ? i18n.tr("Add event to start counting") : settings.myReport + i18n.tr(" ago");
+                text: (settings.myEvent == 0) ? i18n.tr("Add event to start counting") : i18n.tr("%1 ago").arg(settings.myReport);
                 Timer {
                     interval: 1000; running: true; repeat: true
                     onTriggered: {
                         settings.myReport = updateReport.report
-                        metric.circleMetric = updateReport.report + i18n.tr(" ago")
+                        metric.circleMetric = i18n.tr("%1 ago").arg(updateReport.report)
                         metric.update(0)
                         console.log("nCounter metric updated by timer\n")
                     }

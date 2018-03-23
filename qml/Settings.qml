@@ -117,7 +117,7 @@ Page {
             // i18n.tr("Preview of event settings if added")
             DefaultLabel {
                 id: record
-                text: (settings.myEvent == 0) ? i18n.tr("Add event above"): dateSaved.report + i18n.tr(" ago")
+                text: (settings.myEvent == 0) ? i18n.tr("Add event above"): i18n.tr("%1 ago").arg(dateSaved.report)
             }
 
             // i18n.tr("Displays previous stats if applicable")
