@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ncounter.joe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-22 16:41+0000\n"
-"PO-Revision-Date: 2018-03-22 18:25+0100\n"
+"POT-Creation-Date: 2018-03-23 04:39+0000\n"
+"PO-Revision-Date: 2018-03-23 11:30+0100\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: UBports Spanish Team\n"
 "Language: es\n"
@@ -32,7 +32,7 @@ msgstr "Nombre del evento de entrada"
 
 #: ../qml/Settings.qml:90 ../qml/Home.qml:59
 msgid "Check nCounter"
-msgstr "Revisar nCounter"
+msgstr "Probar nCounter"
 
 #: ../qml/Settings.qml:103
 msgid "Track"
@@ -45,6 +45,10 @@ msgstr "Actualizar"
 #: ../qml/Settings.qml:120
 msgid "Add event above"
 msgstr "Añadir el evento de arriba"
+
+#: ../qml/Settings.qml:120 ../qml/Home.qml:72 ../qml/Home.qml:77
+msgid " ago"
+msgstr "hace "
 
 #: ../qml/Settings.qml:127 ../qml/Home.qml:88
 msgid "Previous "
@@ -76,7 +80,8 @@ msgstr ""
 
 #: ../qml/Home.qml:143
 msgid "Knowing that the proving of your faith works out endurance"
-msgstr "Sabiendo que la prueba de su fe ejercita la resistencia"
+msgstr ""
+"Sabiendo que la prueba de su fe ejercita la resistencia"
 
 #: ../qml/Home.qml:144
 msgid "Rejoice in hope; endure in tribulation; persevere in prayer"
@@ -153,6 +158,26 @@ msgstr ""
 #: ../qml/AboutApp.qml:75
 msgid "Report Bugs"
 msgstr "Informar de errores"
+
+#: ../qml/modules/CalcDays.qml:31
+msgid "Year(s)"
+msgstr "Año(s)"
+
+#: ../qml/modules/CalcDays.qml:32
+msgid "Month(s)"
+msgstr "Mes(es)"
+
+#: ../qml/modules/CalcDays.qml:33
+msgid "Day(s)"
+msgstr "Día(s)"
+
+#: ../qml/modules/CalcDays.qml:34
+msgid "and"
+msgstr "y"
+
+#: ../qml/modules/CalcDays.qml:35
+msgid "A moment"
+msgstr "Un momento"
 
 #: ../qml/modules/DefaultHeader.qml:36
 msgid "About App"
