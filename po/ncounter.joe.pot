@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the ncounter.joe package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ncounter.joe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-23 17:31+0000\n"
+"POT-Creation-Date: 2018-05-08 01:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,53 +17,51 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/Main.qml:34 ../qml/Settings.qml:35 ../qml/Home.qml:33
-#: ../qml/AboutApp.qml:31 ncounter.desktop.in.h:1
+#: ../qml/AboutApp.qml:31 ../qml/Main.qml:34 ../qml/Home.qml:33
+#: ../qml/Settings.qml:35 ncounter.desktop.in.h:1
 msgid "nCounter"
 msgstr ""
 
-#: ../qml/Settings.qml:58
-msgid "Event Name & Date:"
+#: ../qml/AboutApp.qml:47
+msgid "About nCounter"
 msgstr ""
 
-#: ../qml/Settings.qml:64
-msgid "Input event name"
+#: ../qml/AboutApp.qml:61
+msgid "Version: "
 msgstr ""
 
-#: ../qml/Settings.qml:90 ../qml/Home.qml:59
-msgid "Check nCounter"
+#: ../qml/AboutApp.qml:65
+msgid ""
+"How long has it been since the last nCounter? Enter the event date and name, "
+"then press 'Track' to find out how long it has been."
 msgstr ""
 
-#: ../qml/Settings.qml:103
-msgid "Track"
-msgstr ""
-
-#: ../qml/Settings.qml:103
-msgid "Update"
-msgstr ""
-
-#: ../qml/Settings.qml:120
-msgid "Add event above"
-msgstr ""
-
-#: ../qml/Settings.qml:120 ../qml/Home.qml:72 ../qml/Home.qml:77
-msgid "%1 ago"
-msgstr ""
-
-#: ../qml/Settings.qml:127 ../qml/Home.qml:88
-msgid "Previous "
-msgstr ""
-
-#: ../qml/Settings.qml:134 ../qml/Home.qml:95
-msgid "Restarts: "
-msgstr ""
-
-#: ../qml/Settings.qml:141 ../qml/AboutApp.qml:69
+#: ../qml/AboutApp.qml:69 ../qml/Settings.qml:141
 msgid "To completely start over, delete the event name and press 'Update'"
+msgstr ""
+
+#: ../qml/AboutApp.qml:75
+msgid "Report Bugs"
+msgstr ""
+
+#: ../qml/Home.qml:59 ../qml/Settings.qml:90
+msgid "Check nCounter"
 msgstr ""
 
 #: ../qml/Home.qml:72
 msgid "Add event to start counting"
+msgstr ""
+
+#: ../qml/Home.qml:72 ../qml/Home.qml:77 ../qml/Settings.qml:120
+msgid "%1 ago"
+msgstr ""
+
+#: ../qml/Home.qml:88 ../qml/Settings.qml:127
+msgid "Previous "
+msgstr ""
+
+#: ../qml/Home.qml:95 ../qml/Settings.qml:134
+msgid "Restarts: "
 msgstr ""
 
 #: ../qml/Home.qml:103
@@ -126,22 +124,24 @@ msgstr ""
 msgid "Do. Or do not. There is no try."
 msgstr ""
 
-#: ../qml/AboutApp.qml:47
-msgid "About nCounter"
+#: ../qml/Settings.qml:58
+msgid "Event Name & Date:"
 msgstr ""
 
-#: ../qml/AboutApp.qml:61
-msgid "Version: "
+#: ../qml/Settings.qml:64
+msgid "Input event name"
 msgstr ""
 
-#: ../qml/AboutApp.qml:65
-msgid ""
-"How long has it been since the last nCounter? Enter the event date and name, "
-"then press 'Track' to find out how long it has been."
+#: ../qml/Settings.qml:103
+msgid "Track"
 msgstr ""
 
-#: ../qml/AboutApp.qml:75
-msgid "Report Bugs"
+#: ../qml/Settings.qml:103
+msgid "Update"
+msgstr ""
+
+#: ../qml/Settings.qml:120
+msgid "Add event above"
 msgstr ""
 
 #: ../qml/modules/CalcDays.qml:31

@@ -48,7 +48,7 @@ msgstr "Añadir el evento de arriba"
 
 #: ../qml/Settings.qml:120 ../qml/Home.qml:72 ../qml/Home.qml:77
 msgid "%1 ago"
-msgstr "hace %1"
+msgstr "Hace %1"
 
 #: ../qml/Settings.qml:127 ../qml/Home.qml:88
 msgid "Previous "

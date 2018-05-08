@@ -37,11 +37,11 @@ Item {
     property int theMonth: settings.myDate.getMonth()
     property int theDay: settings.myDate.getDate()
     property string theEvent: settings.myEvent
-    property string report: theEvent + ":\n" + Dater.daySince(theYear, theMonth, theDay, yearWord, monthWord, dayWord, andWord, momentWord)
+    property string report: Dater.daySince(theYear, theMonth, theDay, yearWord, monthWord, dayWord, andWord, momentWord)
     Timer {
         interval: 1000; running: true; repeat: true
         onTriggered: {
-            report = theEvent + ":\n" + Dater.daySince(theYear, theMonth, theDay, yearWord, monthWord, dayWord, andWord, momentWord)
+            report = Dater.daySince(theYear, theMonth, theDay, yearWord, monthWord, dayWord, andWord, momentWord)
         }
     }
 }
