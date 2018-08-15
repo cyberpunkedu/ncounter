@@ -1,3 +1,6 @@
+# Project moved to:
+https://gitlab.com/joboticon/ncounter
+
 # nCounter
 
 How long has it been since the last nCounter? Trying to start something or trying to quit something on a daily basis? Enter the event date and name, then press 'Track' to find out how long it has been. Details appear in the user metrics on the lock screen.
